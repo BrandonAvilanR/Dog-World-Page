@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- Definimos que es un documento de html5 -->
+<html lang="es"> <!-- Definimos el lenguage español-->
+  <head>
+    <title>Dog World</title>
+    <meta charset="utf-8"> <!-- Definimos el formato de caracteres para nuestro sitio web-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css"> <!-- Vinculamos nuestro html con los estilos fontello para los iconos -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Vinculamos nuestro html con los estilos css -->
+  </head>
+
+  <body>
+
+    <header> <!-- Realizamos el header de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de tipo clase con el nombre contenedor para mantener el formato y orden en toda la pagina-->
+        <h1 class="icon-dog">Dog World</h1> <!-- Agregamos el titulo y el icono del perro en la pagina -->
+        <input type="checkbox" id="menu-bar"> <!-- Creamos y agregamos el icono para el menu de nuestra pagina para pantallas de tablets o smartphones -->
+        <label class="icon-menu"for="menu-bar"></label>
+        <nav class="menu"> <!-- Creamos un menu con nav para la vinculacion de nuestra pagina principal con las otras-->
+          <a href="index.html">Inicio</a> <!-- Creamos un vinculo hacia la pagina de inicio del sitio-->
+          <a href="mascotas.html">Mascotas</a> <!-- Creamos un vinculo hacia la pagina de mascotas del sitio-->
+          <a href="multimedia.html">Multimedia</a> <!-- Creamos un vinculo hacia la pagina de multimedia del sito-->
+          <a href="blog.html">Blog</a> <!-- Creamos un vinculo hacia la pagina del blog del sito-->
+          <a href="mas.html">Más</a> <!-- Creamos un vinculo hacia la pagina de mas informacion del sitio-->
+        </nav>
+      </div>
+    </header> <!-- Cerramos el header -->
+
+    <main> <!-- Realizamos el main de nuestro sitio web -->
+
+      <section id="banner"> <!-- Creamos un section que identificamos como banner y este contendra una noticia importante de nuestra seccion del blog-->
+        <img src="img/husky.jpg" alt="Imagen Husky Siberiano"> <!-- Agregamos la imagen de un perro para nuestro banner -->
+        <div class="contenedor"> <!-- Usamos la clase contenedor para el texto de la noticia del blog -->
+          <h2>Husky Siberiano</h2> <!-- Creamos un titulo -->
+          <p>¿ Estás preparado para tener uno ?</p> <!-- Creamos un texto-->
+          <a href="http://www.mascotadomestica.com/articulos-sobre-perros/todo-lo-que-tienes-que-saber-sobre-el-husky-siberiano.html">Leer más</a> <!-- Se usa un vinculo para la seccion de blog y que el visitante pueda tener toda la informacion de la noticia mencionada-->
+        </div>
+      </section> <!-- Cerramos el section del banner -->
+
+      <section id="bienvenidos"> <!-- Creamos un section identificado como bienvenidos en el cual esta un mensaje de bienvenida al sitio web-->
+        <div class="contenedor"> <!-- Usamos la clase contenedor para agregar el texto de bienvenida-->
+          <h2>Bienvenidos a Dog World</h2> <!-- Titilo de bienvenida -->
+          <p>En nombre de Dog World le damos la bienvenida a nuestra página, en la cual esperamos que encuentre toda la información que usted necesita</p> <!-- Mensaje de bienvenida-->
+        </div>
+      </section>
+
+      <section id="blog"> <!-- Creamos un section identificado como blog el cual contendra 3 articulos del blog-->
+        <h3>Lo más reciente de nuestro blog</h3> <!-- Titulo para nuestro blog en el index del sitio web-->
+        <div class="contenedor"> <!-- Usamos la clase contenedor para poder tener los 3 articulos en un mismo formato-->
+
+          <article> <!-- Creamos el primer articulo -->
+            <img src="img/pastorAleman.jpg" alt="Pastor Aleman"> <!-- Insertamos la imagen del primer articulo -->
+            <h4>Los peludos más inteligentes</h4> <!-- Titulo del primer articulo -->
+          </article> <!-- Cerramos el primer articulo -->
+          <article><!-- Creamos el segundo articulo -->
+            <img src="img/golden.jpg" alt="Golden Retriver"> <!-- Insertamos la imagen del segundo articulo -->
+            <h4>Escoge el peludo ideal</h4> <!-- Titulo del segundo articulo -->
+          </article> <!-- Cerramos el segundo articulo -->
+          <article> <!-- Creamos el tercer articulo -->
+            <img src="img/hikers.jpg" alt="Deporte con perro"> <!-- Insertamos la imagen del tercer articulo -->
+            <h4>Deportes con tu mejor amigo</h4> <!-- Titulo del tercer articulo -->
+          </article> <!-- Cerramos el tercer articulo -->
+
+        </div> <!-- Cerramos el contenedor que esta dentro del blog -->
+      </section> <!-- Cerramos el section identificado como blog -->
+
+      <section id="info"> <!-- Creamso un section identificado como info el cual contendra informacion de contenido multimedia del nuestro sitio web -->
+        <div class="contenedor"> <!-- Usamos un div de clase contenedor para seguir manteniendo el formato en todo el sitio -->
+
+          <h4>"Si tuviera que elegir en quien confiar... lo haría por mi perro... hasta ahora es el único que no ha contado a nadie todos mis secretos...".<br>Arnold Cano</h4> <!-- Usamos una frase de Arnold Cano y lo referenciamos -->
+          <div class="infoPet"> <!-- Creamos el primer div de clase infoPet -->
+            <img src="img/dog1.jpg" alt="Max"> <!-- Primera imagen -->
+            <h4>Max</h4> <!-- Primer nombre -->
+          </div> <!-- Cerramos el primer div de clase infoPet -->
+          <div class="infoPet"> <!-- Creamos el segundo div de clase infoPet -->
+            <img src="img/dog2.jpg" alt="Floyd"> <!-- Segunda imagen -->
+            <h4>Floyd</h4> <!-- Segundo nombre -->
+          </div> <!-- Cerramos el segundo div de clase infoPet -->
+          <div class="infoPet"> <!-- Creamos el tercer div de clase infoPet -->
+            <img src="img/dog3.jpg" alt="Conor"> <!-- Tercera imagen -->
+            <h4>Conor</h4> <!-- Tercer nombre -->
+          </div> <!-- Cerramos el tercer div de clase infoPet -->
+          <div class="infoPet"> <!-- Creamos el cuarto div de clase infoPet -->
+            <img src="img/dog4.jpg" alt="Odin"> <!-- Cuarta imagen -->
+            <h4>Odin</h4> <!-- Cuarto nombre -->
+          </div> <!-- Cerramos el cuarto div de clase infoPet -->
+
+        </div> <!-- Cerramos el div de clase contenedor de info -->
+      </section><!-- Cerramos el section identificado como info -->
+    </main><!-- Cerramos el main de nuestro sitio web-->
+
+    <footer> <!-- Creamos el footer de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de clase contenedor que contiene la informacion de la realizacion de la pagina y redirigimos a redes sociales-->
+        <p class="copy">Dog World &copy; 2017 | Brandon Avilán</p>
+        <div class="sociales">
+          <a class="icon-facebook" href="https://www.facebook.com"></a> <!-- Creamos un vinculo hacia la pagina facebook-->
+          <a class="icon-twitter" href="https://www.twitter.com"></a> <!-- Creamos un vinculo hacia la pagina twitter-->
+          <a class="icon-gplus" href="https://plus.google.com"></a> <!-- Creamos un vinculo hacia la pagina Google Plus-->
+          <a class="icon-youtube" href="https://www.youtube.com"></a> <!-- Creamos un vinculo hacia la pagina youtube-->
+        </div>
+      </div>
+    </footer> <!-- Cerramos el footer de nuestro sitio web-->
+
+  </body>
+</html>

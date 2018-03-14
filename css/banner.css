@@ -1,0 +1,61 @@
+#banner { /* Defenimos el margen superior y la posicion del banner */
+  margin-top: 50px;
+  position: relative;
+}
+
+#banner img{ /* Defenimos los tamaños de la imagen */
+  width: 100%;
+  height: 100%;
+}
+
+#banner .contenedor{ /* Defenimos los atributos de texto dentro de la imagen */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  margin-left: 5px;
+}
+#banner h2{ /* Tamaño de la letra del banner */
+  font-size: 28px;
+}
+#banner #mapa{
+  color: #333;
+  margin-top: -60px;
+  text-align: center;
+}
+#banner a{ /* Definimos los atributos para la etiqueta de leer mas de nuestra pagina index */
+  display: block;
+  width: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 7px;
+  margin-top: 10px;
+  border: 3px solid #ffffff;
+}
+#banner a:hover{ /* Creamos el fondo oscuro cuando pasamos el mouse por encima*/
+  background: rgba(51, 51, 51, 0.7);
+}
+@media (min-width:480px) { /* Definimos atributos distinto para pantalla de celular*/
+  #banner h2{
+    font-size: 40px;
+  }
+  #banner a{
+    margin-top: 25px;
+  }
+}
+@media (min-width:768px) { /* Definimos atributos distinto para pantalla de tablet*/
+  #banner{
+    height: 300px;
+    overflow: hidden;
+  }
+  #banner img{
+    height: auto;
+    margin-top: -100px;
+  }
+}
+@media (min-width:1024px) { /* Definimos atributos distinto para pantalla web*/
+  #banner img{
+    margin-top: -200px;
+  }
+}

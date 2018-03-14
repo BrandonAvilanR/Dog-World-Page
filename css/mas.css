@@ -1,0 +1,30 @@
+.mapa{ /*Estilos del mapa del sitio*/
+    color: #333;
+    list-style-type: square;
+    padding-left: 50px;
+}
+.mapa_principal{ /*Estilos de los titulos del mapa del sitio*/
+    color: #333;
+    list-style-type: disc;
+}
+.referencias{ /*estilos de los vinculos para las referencias*/
+    color: #333;
+    text-decoration:none;/*letra subrayada*/
+    font-style: italic;/*letra italica*/
+    font-size: 20px;
+}
+.referencias:hover{ /*estilos de los vinculos para las referencias cuando se pasa el mouse sobre ellas*/
+    color: #333;
+    text-decoration: none;
+}
+#mapas{ /* Le ponemos un padding izquierdo y un tamaño de 70% */
+  padding-left: 50px;
+  margin: auto;
+  width: 70%;
+  min-height: 550px;
+  padding-bottom: 25px;
+}
+#mapas .contenedor h2{ /* Para el titulo h2 de mapas le ponemos un padding inferior y superior de 15px */
+  padding-bottom: 15px;
+  padding-top: 15px;
+}

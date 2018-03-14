@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- Definimos que es un documento de html5 -->
+<html lang="es"> <!-- Definimos el lenguage español-->
+  <head>
+    <title>Mascotas</title>
+    <meta charset="utf-8"> <!-- Definimos el formato de caracteres para nuestro sitio web-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css"> <!-- Vinculamos nuestro html con los estilos fontello para los iconos -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Vinculamos nuestro html con los estilos css -->
+  </head>
+
+  <body>
+
+    <header> <!-- Realizamos el header de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de tipo clase con el nombre contenedor para mantener el formato y orden en toda la pagina-->
+        <h1 class="icon-dog">Dog World</h1> <!-- Agregamos el titulo y el icono del perro en la pagina -->
+        <input type="checkbox" id="menu-bar"> <!-- Creamos y agregamos el icono para el menu de nuestra pagina para pantallas de tablets o smartphones -->
+        <label class="icon-menu"for="menu-bar"></label>
+        <nav class="menu"> <!-- Creamos un menu con nav para la vinculacion de nuestra pagina principal con las otras-->
+          <a href="index.html">Inicio</a> <!-- Creamos un vinculo hacia la pagina de inicio del sitio-->
+          <a href="mascotas.html">Mascotas</a> <!-- Creamos un vinculo hacia la pagina de mascotas del sitio-->
+          <a href="multimedia.html">Multimedia</a> <!-- Creamos un vinculo hacia la pagina de multimedia del sito-->
+          <a href="blog.html">Blog</a> <!-- Creamos un vinculo hacia la pagina del blog del sito-->
+          <a href="mas.html">Más</a> <!-- Creamos un vinculo hacia la pagina de mas informacion del sitio-->
+        </nav>
+      </div>
+    </header> <!-- Cerramos el header -->
+
+    <main> <!-- Realizamos el main de nuesta pagina mascotas -->
+
+      <section id="bannerMascotas"> <!-- Creamos un section que identificamos como bannerMascotas y este contendra una noticia importante de nuestra seccion del blog-->
+        <img src="img/mascotasMain.jpg" alt="Imagen Mascotas"> <!-- Agregamos la imagen de un perro para nuestro banner -->
+        <div class="contenedor"> <!-- Usamos la clase contenedor para el texto de la noticia del blog -->
+          <h2>Bienvenidos a Mascotas</h2><!-- Creamos un titulo -->
+        </div>
+      </section> <!-- Cerramos el section del banner -->
+
+      <section id="introMascotas"> <!-- Creamos un section identificado como introMascotas en el cual esta un mensaje de introduccion a lo se va a ver en esta parte del sitio-->
+        <div class="contenedor"> <!-- Usamos la clase contenedor para agregar el texto de bienvenida-->
+          <h2>Introducción</h2> <!-- Titilo de bienvenida -->
+          <p>En esta sección de nuestra página encontrara información para el cuidado de su mascota</p> <!-- Especificamos el contenido de esta parte de la pagina-->
+        </div>
+      </section>
+
+      <section id="cuidados"> <!-- Creamos un section identificado como cuidados el cual contendra 3 cuidados -->
+        <h3>Los tres cuidados básicos para tu mascota</h3> <!-- Titulo cuidados mascota -->
+        <div class="contenedor"> <!-- Usamos la clase contenedor para poder tener los 3 articulos en un mismo formato-->
+
+          <article> <!-- Creamos el primer articulo -->
+            <img src="img/alimentacion.jpg" alt="Alimentacion perro "> <!-- Insertamos la imagen del primer articulo -->
+            <h3>Alimentación</h3> <!-- Titulo del primer articulo -->
+            <p id="left">Si es cachorro le tendrás que racionar la comida durante tres veces al día, de adulto bastará con dos o
+              una vez al día. Recuerda siempre tener agua fresca a su disposición, especialmente en los meses más calurosos.</p> <!-- Ponemos el texto -->
+          </article> <!-- Cerramos el primer articulo -->
+          <article><!-- Creamos el segundo articulo -->
+            <img src="img/baño.jpg" alt="Baño perro"> <!-- Insertamos la imagen del segundo articulo -->
+            <h3>Baño</h3> <!-- Titulo del segundo articulo -->
+            <p id="ceter"> No hace falta bañar al perro cada mes, si le cepillamos diariamente se mantendrá limpio y solo será necesario bañarlo dos veces al año.</p> <!-- Ponemos el texto -->
+          </article> <!-- Cerramos el segundo articulo -->
+          <article> <!-- Creamos el tercer articulo -->
+            <img src="img/paseo.jpg" alt="Paseo con perro"> <!-- Insertamos la imagen del tercer articulo -->
+            <h3>Paseo</h3> <!-- Titulo del tercer articulo -->
+            <p id="right"> Disfruta de los paseos con tu perro. Él los necesita para hacer ejercicio y socializar, así que unos 3 paseos al día estarán bien y mejor
+              todavía si las alternas con largas caminatas por el campo. Sé civilizado y recoge los excrementos de tu perro.</p> <!-- Ponemos el texto -->
+          </article> <!-- Cerramos el tercer articulo -->
+
+        </div> <!-- Cerramos el contenedor que esta dentro del cuidados -->
+      </section> <!-- Cerramos el section identificado como cuidados -->
+
+    </main><!-- Cerramos el main -->
+
+    <footer> <!-- Creamos el footer de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de clase contenedor que contiene la informacion de la realizacion de la pagina y redirigimos a redes sociales-->
+        <p class="copy">Dog World &copy; 2017 | Brandon Avilán</p>
+        <div class="sociales">
+          <a class="icon-facebook" href="https://www.facebook.com"></a> <!-- Creamos un vinculo hacia la pagina facebook-->
+          <a class="icon-twitter" href="https://www.twitter.com"></a> <!-- Creamos un vinculo hacia la pagina twitter-->
+          <a class="icon-gplus" href="https://plus.google.com"></a> <!-- Creamos un vinculo hacia la pagina Google Plus-->
+          <a class="icon-youtube" href="https://www.youtube.com"></a> <!-- Creamos un vinculo hacia la pagina youtube-->
+        </div>
+      </div>
+    </footer> <!-- Cerramos el footer de nuestro sitio web-->
+
+  </body>
+</html>

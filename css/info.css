@@ -1,0 +1,35 @@
+#info { /* Ponemos un background oscuro con letra blanca y tenxto alineado */
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor { /* Le ponemos un display flex para ajustar contenidos y lo centramos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoPet {
+    margin: 20px; /*Le definimos un margin de 20px*/
+}
+
+.infoPet img { /*Definimos el tamaño y que las imagenes sean redondos para las imagenes de infoPet*/
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+@media (min-width:480px) { /* Definimos atributos distinto para pantalla de celular*/
+    .infoPet {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) { /* Definimos atributos distinto para pantalla web*/
+    .infoPet {
+        width: auto;
+    }
+}

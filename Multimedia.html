@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Definimos que es un documento de html5 -->
+<html lang="es"> <!-- Definimos el lenguage español-->
+  <head>
+    <title>multimedia</title>
+    <meta charset="utf-8"> <!-- Definimos el formato de caracteres para nuestro sitio web-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css"> <!-- Vinculamos nuestro html con los estilos fontello para los iconos -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Vinculamos nuestro html con los estilos css -->
+  </head>
+
+  <body>
+
+    <header> <!-- Realizamos el header de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de tipo clase con el nombre contenedor para mantener el formato y orden en toda la pagina-->
+        <h1 class="icon-dog">Dog World</h1> <!-- Agregamos el titulo y el icono del perro en la pagina -->
+        <input type="checkbox" id="menu-bar"> <!-- Creamos y agregamos el icono para el menu de nuestra pagina para pantallas de tablets o smartphones -->
+        <label class="icon-menu"for="menu-bar"></label>
+        <nav class="menu"> <!-- Creamos un menu con nav para la vinculacion de nuestra pagina principal con las otras-->
+          <a href="index.html">Inicio</a> <!-- Creamos un vinculo hacia la pagina de inicio del sitio-->
+          <a href="mascotas.html">Mascotas</a> <!-- Creamos un vinculo hacia la pagina de mascotas del sitio-->
+          <a href="multimedia.html">Multimedia</a> <!-- Creamos un vinculo hacia la pagina de multimedia del sito-->
+          <a href="blog.html">Blog</a> <!-- Creamos un vinculo hacia la pagina del blog del sito-->
+          <a href="mas.html">Más</a> <!-- Creamos un vinculo hacia la pagina de mas informacion del sitio-->
+        </nav>
+      </div>
+    </header> <!-- Cerramos el header -->
+    <main>
+      <section id="bannerMascotas"> <!-- Creamos un section que identificamos como bannerMascotas y este contendra una noticia importante de nuestra seccion del blog-->
+        <div id="dog">
+          <img src="img/multimedia.jpeg" alt="Imagen perro jugando"> <!-- Agregamos la imagen de un perro para nuestro banner -->
+        </div>
+        <div class="contenedor"> <!-- Usamos la clase contenedor para el texto de la noticia del blog -->
+          <h2 id="dog">Bienvenidos a  nuestro contenido multimedia</h2><!-- Creamos un titulo -->
+        </div>
+      </section> <!-- Cerramos el section del banner -->
+
+      <div class="contenedor"> <!-- Creamos un div de clase contenedor para almacenar los videos -->
+        <article>
+          <h2>A continuacion encontraras algunos videos de adiestramiento canino</h2>
+          <hr>
+          <h3>El máximo error al entrenar un perro</h3>
+          <div class="videoResponsive"> <!-- Creamos un div para insertar el video y creamos una clase videoResponsive para manejar los video en todas las pantallas -->
+            <iframe src="https://www.youtube.com/embed/ypHEMpMb_tU"  allowfullscreen></iframe> <!-- Insertamos el video de youtube y usamos allowfullscreen para permitir el uso de pantalla completa -->
+          </div>
+          <hr>
+          <h3>Cómo poder bañar a cualquier perro</h3>
+          <div class="videoResponsive"> <!-- Creamos un div para insertar el video y creamos una clase videoResponsive para manejar los video en todas las pantallas -->
+            <iframe src="https://www.youtube.com/embed/IWXrU0RbB6E"  allowfullscreen></iframe> <!-- Insertamos el video de youtube y usamos allowfullscreen para permitir el uso de pantalla completa -->
+          </div>
+          <hr>
+          <h3>Cómo hacer que le gusten los juguetes a tu perro</h3>
+          <div class="videoResponsive"> <!-- Creamos un div para insertar el video y creamos una clase videoResponsive para manejar los video en todas las pantallas -->
+            <iframe src="https://www.youtube.com/embed/9ScSSKItR7A"  allowfullscreen></iframe> <!-- Insertamos el video de youtube y usamos allowfullscreen para permitir el uso de pantalla completa -->
+          </div>
+          <hr>
+          <h3>Cómo entrenar a un perro para ir al baño</h3>
+          <div class="videoResponsive"> <!-- Creamos un div para insertar el video y creamos una clase videoResponsive para manejar los video en todas las pantallas -->
+            <iframe src="https://www.youtube.com/embed/887-K9S6KIM"  allowfullscreen></iframe> <!-- Insertamos el video de youtube y usamos allowfullscreen para permitir el uso de pantalla completa -->
+          </div>
+          <hr>
+          <h3>Entrenar un perro cuando tu digas, a la orden</h3>
+          <div class="videoResponsive"> <!-- Creamos un div para insertar el video y creamos una clase videoResponsive para manejar los video en todas las pantallas -->
+            <iframe src="https://www.youtube.com/embed/bbq8K40ZEns"  allowfullscreen></iframe> <!-- Insertamos el video de youtube y usamos allowfullscreen para permitir el uso de pantalla completa -->
+          </div>
+          <hr>
+        </article>
+      </div>
+
+      <section id="contacto"> <!-- Creamos otro seccion en el cual vamos a tener un link que nos guia al canal de los videos mostrados anteriormente -->
+        <h3 id="title">Si quieres ver mas vídeos puedes visitar</h3>
+        <div class="contenedor">
+          <p> <a href="https://www.youtube.com/channel/UCuP3WMHIhvxF9aNz-7xHVbw">José Luis MartGon</a> </p> <!-- Vinculo para el canal -->
+        </div>
+      </section>
+
+    </main>
+
+    <footer> <!-- Creamos el footer de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de clase contenedor que contiene la informacion de la realizacion de la pagina y redirigimos a redes sociales-->
+        <p class="copy">Dog World &copy; 2017 | Brandon Avilán</p>
+        <div class="sociales">
+          <a class="icon-facebook" href="https://www.facebook.com"></a> <!-- Creamos un vinculo hacia la pagina facebook-->
+          <a class="icon-twitter" href="https://www.twitter.com"></a> <!-- Creamos un vinculo hacia la pagina twitter-->
+          <a class="icon-gplus" href="https://plus.google.com"></a> <!-- Creamos un vinculo hacia la pagina Google Plus-->
+          <a class="icon-youtube" href="https://www.youtube.com"></a> <!-- Creamos un vinculo hacia la pagina youtube-->
+        </div>
+      </div>
+    </footer> <!-- Cerramos el footer de nuestro sitio web-->
+
+  </body>
+</html>

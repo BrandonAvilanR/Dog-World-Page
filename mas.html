@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!-- Definimos que es un documento de html5 -->
+<html lang="es"> <!-- Definimos el lenguage español-->
+  <head>
+    <title>Más</title>
+    <meta charset="utf-8"> <!-- Definimos el formato de caracteres para nuestro sitio web-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css"> <!-- Vinculamos nuestro html con los estilos fontello para los iconos -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Vinculamos nuestro html con los estilos css -->
+  </head>
+
+  <body>
+
+    <header> <!-- Realizamos el header de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de tipo clase con el nombre contenedor para mantener el formato y orden en toda la pagina-->
+        <h1 class="icon-dog">Dog World</h1> <!-- Agregamos el titulo y el icono del perro en la pagina -->
+        <input type="checkbox" id="menu-bar"> <!-- Creamos y agregamos el icono para el menu de nuestra pagina para pantallas de tablets o smartphones -->
+        <label class="icon-menu"for="menu-bar"></label>
+        <nav class="menu"> <!-- Creamos un menu con nav para la vinculacion de nuestra pagina principal con las otras-->
+          <a href="index.html">Inicio</a> <!-- Creamos un vinculo hacia la pagina de inicio del sitio-->
+          <a href="mascotas.html">Mascotas</a> <!-- Creamos un vinculo hacia la pagina de mascotas del sitio-->
+          <a href="multimedia.html">Multimedia</a> <!-- Creamos un vinculo hacia la pagina de multimedia del sito-->
+          <a href="blog.html">Blog</a> <!-- Creamos un vinculo hacia la pagina del blog del sito-->
+          <a href="mas.html">Más</a> <!-- Creamos un vinculo hacia la pagina de mas informacion del sitio-->
+        </nav>
+      </div>
+    </header> <!-- Cerramos el header -->
+
+    <main>
+
+      <section id="banner"> <!-- Creamos un section que identificamos como banner -->
+        <img src="img/snow.jpg" alt="Imagen Huskys Siberianos"> <!-- Agregamos la imagen de un perro para nuestro banner -->
+      </section> <!-- Cerramos el section del banner -->
+
+      <section id="mapas">
+        <div class="contenedor">
+          <h2>Mapa del sitio</h2>
+          <ul class="mapa_principal"> <!-- Creamos etiquetas li y ul para poder hacer listas para el mapa del sitio -->
+            <li><p><a href="index.html" class="referencias">Inicio</a></p>
+              <ul class="mapa">
+                <li><p>Husky Siberiano</p></li>
+                <li><p>Bienvenida</p></li>
+                <li><p>Blog</p></li>
+              </ul>
+            </li>
+            <li><p><a href="Mascotas.html" class="referencias">Mascotas</a></p>
+              <ul class="mapa">
+                <li><p>Bienvenidos</p></li>
+                <li><p>Introducción</p></li>
+                <li><p>Cuidados básicos</p></li>
+              </ul>
+            </li>
+            <li><p><a href="Multimedia.html" class="referencias">Multimedia</a></p>
+              <ul class="mapa">
+                <li><p>Bienvenida</p></li>
+                <li><p>El máximo error al entrenar un perro</p></li>
+                <li><p>Cómo poder bañar a cualquier perro</p></li>
+                <li><p>Cómo hacer que le gusten los juguetes a tu perro</p></li>
+                <li><p>Cómo entrenar a un perro para ir al baño</p></li>
+                <li><p>Entrenar un perro cuando tu digas, a la orden</p></li>
+              </ul>
+            </li>
+            <li><p><a href="blog.html" class="referencias">Blog</a></p>
+              <ul class="mapa">
+                <li><p>Bienvenida</p></li>
+                <li><p>Nuestro Blog</p></li>
+                <li><p>Los peludos más inteligentes</p></li>
+                <li><p>Escoge el peludo ideal</p></li>
+                <li><p>Deportes con tu mejor amigo</p></li>
+              </ul>
+            </li>
+            <li><p><a href="mas.html" class="referencias">Más</a></p>
+              <ul class="mapa">
+                <li><p>Mapa del Sitio</p></li>
+                <li><p>Referencias</p></li>
+                <li><p>Información para complementar</p></li>
+              </ul>
+            </li>
+          </ul>
+          <hr>
+          <h2>Referencias</h2>
+          <li><a href="https://www.youtube.com/channel/UCuP3WMHIhvxF9aNz-7xHVbw" class="referencias">José Luis MartGon</a></li> <!-- Página de referencias -->
+          <li><a href="http://www.lacuarta.com" class="referencias">La Cuarta</a></li> <!-- Página de referencias -->
+          <li><a href="http://www.4patas.com.co" class="referencias">4 Patas</a></li> <!-- Página de referencias -->
+          <li><a href="http://www.20minutos.es" class="referencias">20 Minutos</a></li> <!-- Página de referencias -->
+          <li><a href="http://www.fundacion-affinity.org/" class="referencias">Fundación Affinity</a></li> <!-- Página de referencias -->
+          <li><a href="http://www.mascotadomestica.com/" class="referencias">Mascota Domestica</a></li> <!-- Página de referencias -->
+        </div>
+
+
+      </section>
+
+      <section id="contacto">
+        <h3>Aquí encontraran otros sitios web donde podran ver más información para complementar</h3>
+        <div class="contenedor">
+            <div class="link">
+              <a href="https://www.youtube.com/channel/UCuP3WMHIhvxF9aNz-7xHVbw">José Luis MartGon</a> <!-- Página de contacto -->
+            </div>
+            <div class="link">
+              <a href="http://www.lacuarta.com">La Cuarta</a> <!-- Página de contacto -->
+            </div>
+            <div class="link">
+              <a href="http://www.4patas.com.co">4 Patas</a> <!-- Página de contacto -->
+            </div>
+            <div class="link">
+              <a href="http://www.20minutos.es">20 Minutos</a> <!-- Página de contacto -->
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer> <!-- Creamos el footer de nuestro sitio web -->
+      <div class="contenedor"> <!-- Creamos un div de clase contenedor que contiene la informacion de la realizacion de la pagina y redirigimos a redes sociales-->
+        <p class="copy">Dog World &copy; 2017 | Brandon Avilán</p>
+        <div class="sociales">
+          <a class="icon-facebook" href="https://www.facebook.com"></a> <!-- Creamos un vinculo hacia la pagina facebook-->
+          <a class="icon-twitter" href="https://www.twitter.com"></a> <!-- Creamos un vinculo hacia la pagina twitter-->
+          <a class="icon-gplus" href="https://plus.google.com"></a> <!-- Creamos un vinculo hacia la pagina Google Plus-->
+          <a class="icon-youtube" href="https://www.youtube.com"></a> <!-- Creamos un vinculo hacia la pagina youtube-->
+        </div>
+      </div>
+    </footer> <!-- Cerramos el footer de nuestro sitio web-->
+
+  </body>
+</html>

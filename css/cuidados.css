@@ -1,0 +1,24 @@
+#cuidados h3{/* Definimos que el texto este centrado para el tipo de letra h3*/
+  text-align: center;
+  margin-bottom: 5px;
+}
+#cuidados p{ /* Definimos que el texto este centrado */
+  text-align: center;
+  max-width: 280px;
+}
+#cuidados .contenedor{ /* En nuesto contenedor vamos a tener un display flex para que se ajuste a los cambios de pantalla y el contenido centrado*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #333;
+  color: #fff;
+  width: 100%;
+}
+#cuidados article{ /* A los article de cuidados le definimos un margin de 15px; */
+  margin: 15px;
+}
+#cuidados img{ /* A las imagenes dentro de blog les definimos un width de 100%, un max-width de 280px* y un margin bottom de 10px */
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 10px;
+}

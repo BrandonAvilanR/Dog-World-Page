@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');/* Importamos el tipo de fuente utilizada en el sitio web en este caso sera OPEN SANS */
+@import url(menu.css); /* Importamos el archivo menu.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(banner.css); /* Importamos el archivo banner.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(blog.css); /* Importamos el archivo blog.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(info.css); /* Importamos el archivo info.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(bannerMascotas.css); /* Importamos el archivo bannerMascotas.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(infoMascotas.css); /* Importamos el archivo infoMascotas.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(cuidados.css); /* Importamos el archivo cuidados.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(videos.css); /* Importamos el archivo multimedia.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+@import url(mas.css); /* Importamos el archivo multimedia.css que contendra los estilos y modificacion que hicimos en este section lo separamos con el fin de tener todo mejor organizado*/
+
+*{
+  margin: 0; /* Restablecemos los margenes */
+  padding: 0; /* Restablecemos el padding para los contenidos */
+  box-sizing: border-box; /*  Restablecemos las propiedades de tamaño (Ancho y alto)*/
+}
+body{
+  font-family: 'Open Sans', sans-serif; /* Aplicamos el tipo de letra Open Sans a nuestra pagina */
+}
+header{ /* Definimos las propiedades para nuestro header */
+  width: 100%; /* Le indicamos que ocupe toda la pantalla siempre y usamos porcentaje por el tema de responsive desing */
+  height: 50px; /* Le indicamos que tenga una altura de 50px */
+  background: #333; /* Le indicamos el color del fondo */
+  color: #fff; /* Le indicamos el color de la letra */
+  position: fixed; /* Indicamos que su posision sera relativa en la pantalla de donde se esta viendo */
+  top: 0; /* Le indicamos que no tenga margenes en la parte superior */
+  left: 0; /* Le indicamos que no tenga margenes en la parte inferior  */
+  z-index: 100; /* Con este z-index indicamos que nuestro header siempre se superponga sobre los otros elementos y cuando haga scroll siempre este alli que no desaparezca */
+}
+.contenedor{ /* Definimos las propiedades de nuestro contenedor */
+  width: 98%; /* Le indicamos que siempre ocupe el 98% de la pantalla a lo ancho */
+  margin: auto; /* Le indicamos que las margenes sean automáticas */
+}
+h1{ /* Definimos las propiedades para el titulo principal del sitio */
+  float: left; /* Le indicamos que se posicione al lado izquierdo de la pagina */
+}
+header .contenedor{ /* Definimos las propiedades para el contenedor de nuestro header */
+  display: table; /* Hacemos que nuestro header se comporte como un elemento table para asi poder tener texto sobre la imagen */
+}
+section{ /* Definimos las propiedades comunes que van a tener todos los section */
+  width: 100%;  /* Tendran una anchura del 100% donde se encuentre para nuestra web sera la 100% del weidth de nuestro contenedor */
+  margin-bottom: 25px; /* Tendran un margen inferior de 25px con eso no se amontonan unos sobre otros */
+}
+#bienvenidos{ /* Definimos las propiedades para el id bienvenidos */
+  text-align: center; /* Centramos el texto de bienvenida */
+}
+#introMascotas{ /* Definimos las propiedades para el id introMascotas */
+  text-align: center; /* Centramos el texto de introduccion */
+}
+footer .contenedor{ /* Definimos las propiedades del contenedor de nuestro footer */
+  display: flex; /* Definimos que sea flexible nuestro contenedor */
+  flex-wrap: wrap;
+  justify-content: center; /* Centramos el contenido del footer */
+  padding-bottom: 25px; /* Definimos un margen inferior de 25px; */
+}
+.copy{
+  font-size: 20px; /* Definimos el tamaño de letra de 20px */
+}
+.sociales{
+  width: 100%; /* Decimos que los iconos ocupen un 100% del footer */
+  text-align: center; /* Centramos los iconos */
+  font-size: 28px; /* Le definimos el tamaño a los iconos de 28px */
+}
+.sociales a{
+  color: #333; /* Le damos color a los iconos */
+  text-decoration: none; /* La decoracion del subrayado se la quitamos a los iconos */
+}
+#contacto{
+  background: #333; /* Definimos un color gris oscuro para el fondo donde estara informacion de contacto */
+}
+#contacto h3{
+  color: #fff; /* Pondremos un color blanco para el texto que estara en la informacion de contacto */
+}
+#contacto #title{
+  padding-top: 10px;
+}
+#contacto .contenedor{
+  width: 40%; /* Daremos un tamaño de 40% para  que no se acumulen los datos en esta seccion*/
+  padding-top: 25px; /* Daremos un margen superior de 25px */
+  padding-bottom: 25px; /* Daremos un margen inferior de 25px */
+  text-align: center; /* Ajustaremos el texto en forma centrada */
+  color: #fff; /* Color de letra blanca */
+  display: flex; /* Ponemos un display flex para poner el contenido de manera flexible a todos los tamaños de pantalla */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contacto .contenedor h3{
+  text-align: left; /* Pondremos centrado el contenido del texto de tipo h3 */
+}
+#contacto .contenedor a{ /* Ajustamos los hipervinculos y definimos su formato a continuacion con los mismos atributos usados anteriormente*/
+  display: block;
+  width: 200px;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px;
+  margin-top: 10px;
+  border: 3px solid #fff;
+}
+#contacto .contenedor a:hover{
+  background: rgba(0, 0, 0, 0.7); /* Usamos un hover para que cuando pasemos el mouse por los vinculos creados se oscuresca un poco */
+}
+@media (min-width:768px) { /* Hacemos responsive para un tamaño de pantalla de tablet */
+  .sociales{
+    width: auto; /* Damos que el tamaño sea auto para que se acomoden al tamaño de la pantalla*/
+  }
+  #contacto .contenedor{
+    width: 45%;
+  }
+  footer .contenedor{
+    justify-content: space-between; /* Decimos que si los contenidos de copy y sociales se juntan alla un espacio entre ellas */
+  }
+}
+@media (min-width:1024px) { /* Hacemos responsive para un tamaño de pantalla de un ordenador */
+  .contenedor{  /* Cambiamos metodos al contenedor */
+    width: 1000px; /* Especificamos que el tamaño del contenedor para este tipo de pantalla sera de 1000px  */
+  }
+  #contacto .contenedor{
+    width: auto;
+  }
+}

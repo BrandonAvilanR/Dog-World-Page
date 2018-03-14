@@ -1,0 +1,19 @@
+#blog h2, h3, h4{ /* Definimos que el texto este centrado para los tipos de letra h2, h3 y h4  en nuestro blog*/
+  text-align: center;
+}
+#blog .contenedor{ /* En nuesto contenedor vamos a tener un display flex para que se ajuste a los cambios de pantalla y el contenido centrado*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#blog .contenedor a{ /* Para los contenedores con hipervinculos le ponemos el color de la letra y no le ponemos decoracion */
+  text-decoration: none;
+  color: #333;
+}
+#blog article{ /* A los article del blog le definimos un margin de 15px; */
+  margin: 15px;
+}
+#blog img{ /* A las imagenes dentro de blog les definimos un width de 100% y un max-width de 280px*/
+  width: 100%;
+  max-width: 280px;
+}
